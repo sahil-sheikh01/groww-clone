@@ -1,11 +1,12 @@
 import "./Navbar.css";
+import groww_logo from '../../assets/groww_logo.webp'
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left">
         <div className="logo">
-          <img src="/src/assets/groww_logo.webp" alt="Groww" />
+          <img src={groww_logo} alt="Groww" />
         </div>
 
         <div className="nav-links">
