@@ -1,0 +1,386 @@
+platform-heading {
+  text-align: center;
+  margin-top: 40px auto;
+  width: 100px;
+}
+
+.platform-heading h2 {
+  font-size: 24px;
+  margin: 4px;
+  color: grey;
+  text-align: center;
+}
+
+.platform-heading p {
+  font-size: 13px;
+  color: grey;
+  margin: 10px;
+  text-align: center;
+}
+
+.investment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 20px 20px 20px; 
+}
+
+.investment-section h1 {
+  font-size: 44px;
+  font-weight: bold;
+  color: #191c1f;
+  margin-bottom: 10px; 
+}
+
+
+.market-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 40px auto;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+
+.left-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.right-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  min-width: 0;
+}
+
+.outer-card {
+  width: 100%;
+  background-color: #f7f9fa;
+  border-radius: 24px;
+  border: 1px solid #e5e7eb;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.stocks-outer-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.phone-screen {
+  width: 100%;
+  max-width: 370px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.stock-logo {
+  width: 100%;
+  max-width: 400px;
+  height: 170px;
+  object-fit: contain;
+}
+
+.stock-price {
+  color: #111827;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stock-change {
+  color: #00a878;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.stock-graph {
+  width: 100%;
+  height: 180px;
+}
+
+.chart-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.chart-filters button {
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  padding: 4px 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.chart-filters button.active {
+  background-color: #f3f4f6;
+  color: #00a878;
+  font-weight: bold;
+}
+
+
+.bonds-card {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  border-radius: 24px;
+  min-height: 220px;
+  padding: 40px 24px;
+  background-color: #ffffff;
+  
+  
+  background-image: url('https://resources.groww.in/web-assets/story_assets/landing-page/home_page/bonds_hover_image.webp');
+  background-size: 100% 100%;  
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bonds-card h2 {
+  color: #191c1f;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+.bonds-subtitle {
+  color: #6b7280;
+  font-size: 13px;
+  margin: 0;
+  font-weight: 400;
+}
+
+
+.etf-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.etf-card h2 {
+  color: #191c1f;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.etf-subtitle {
+  color: #777;
+  font-size: 13px;
+  margin: 6px 0 30px 0;
+  text-align: left;
+}
+
+.etf-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  width: 100%;
+  align-items: center;
+  justify-items: center; 
+}
+
+.etf-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.etf-item img {
+  width: 75px; 
+  height: 75px; 
+  object-fit: contain;
+}
+
+.etf-item p {
+  color: #444;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+.ipo-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 24px;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.ipo-card h2 {
+  color: #191c1f;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+}
+
+.ipo-mobile-frame {
+  border: 1px solid #d1d5db;
+  border-radius: 20px;
+  padding: 17px;
+  max-width: 380px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.ipo-tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+.ipo-tab {
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+}
+
+.ipo-tab.active {
+  color: #00d09c; 
+  font-weight: bold;
+}
+
+.ipo-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00d09c;
+}
+
+.ipo-type-filter {
+  display: flex;
+  gap: 6px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.ipo-type-label {
+  color: #6b7280;
+}
+
+.ipo-type-value {
+  color: #191c1f;
+  font-weight: 600;
+}
+
+.ipo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ipo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.ipo-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.ipo-info h4 {
+  font-size: 14px;
+  color: #1f2937;
+  margin: 0 0 2px 0;
+  font-weight: 600;
+}
+
+.ipo-info p {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.ipo-action-btn {
+  background-color: transparent;
+  color: #00d09c;
+  border: 1px solid #00d09c;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pre-apply-btn {
+  color: #6b7280;
+  border-color: #d1d5db;
+}
+
+.ipo-img-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
