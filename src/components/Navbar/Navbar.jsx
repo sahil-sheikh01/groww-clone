@@ -1,15 +1,12 @@
-
 import "./Navbar.css";
+import groww_logo from '../../assets/groww_logo.webp'
 
 function Navbar() {
   return (
     <nav className="navbar">
-
       <div className="navbar-left">
-
         <div className="logo">
-          <img src="https://resources.groww.in/web-assets/img/website-logo/groww_logo.webp" alt="Groww" />
-          
+          <img src={groww_logo} alt="Groww" />
         </div>
 
         <div className="nav-links">
@@ -18,27 +15,12 @@ function Navbar() {
           <a href="#">Mutual Funds</a>
           <a href="#">More</a>
         </div>
-
       </div>
 
       <div className="navbar-right">
-
-        <input
-          type="text"
-          placeholder="Search stocks..."
-          className="search"
-        />
-
-        <button className="login-btn">
-          Login
-        </button>
-
-        <button className="signup-btn">
-          Login / Sign up
-        </button>
-
+        <input className="search" type="text" placeholder="Search Groww..." />
+        <button className="signup-btn">Login/Sign up</button>
       </div>
-
     </nav>
   );
 }
