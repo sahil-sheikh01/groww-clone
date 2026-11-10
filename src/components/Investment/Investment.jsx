@@ -1,6 +1,5 @@
-import React from 'react';
 import "./Investment.css";
-import logo from '../../groww-clone.png';
+import logo from '../../assets/stocks.png';
 
 function Investment() {
   return (
@@ -19,8 +18,6 @@ function Investment() {
       <div className="market-cards">
         
         <div className="left-cards">
-          
-        
           <div className="outer-card">
             <h2 className="stocks-outer-title">Stocks</h2>
             <div className="phone-screen">
