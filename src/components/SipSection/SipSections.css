@@ -1,0 +1,173 @@
+.sip-grid-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px 60px;
+  text-align: center;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #ffffff;
+  
+  background-image: 
+    linear-gradient(to right, #f3f4f6 1px, transparent 1px),
+    linear-gradient(to bottom, #f3f4f6 1px, transparent 1px);
+  background-size: 90px 90px;
+  position: relative;
+}
+
+.sip-heading {
+  font-size: 38px;
+  font-weight: 700;
+  color: #2f3241;
+  margin-bottom: 10px;
+}
+
+.sip-subtext {
+  font-size: 15px;
+  color: #7c7e8c;
+  margin-bottom: 22px;
+}
+
+.start-sip-btn {
+  background-color: #ffffff;
+  color: #2f3241;
+  border: 1px solid #d9dce2;
+  padding: 10px 26px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.connector-lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 24px;
+  background-color: #e2e4e9;
+}
+
+.horizontal-line {
+  width: 66%;
+  height: 1px;
+  background-color: #e2e4e9;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.fund-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #eceef2;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+  min-height: 190px;
+}
+
+.center-card {
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+  border-color: #e2e5ec;
+  z-index: 2;
+}
+
+.side-card {
+  opacity: 0.55;
+}
+
+.card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+  background-color: #e6f4ff;
+}
+
+.center-card h4 {
+  font-size: 16px;
+  color: #2f3241;
+  margin-bottom: 4px;
+}
+
+.fund-category {
+  font-size: 12px;
+  color: #8f92a1;
+  margin-bottom: 18px;
+}
+
+.fund-return {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00b386;
+  margin-bottom: 10px;
+}
+
+.fund-return span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8f92a1;
+  margin-left: 4px;
+}
+
+.explore-link {
+  font-size: 13px;
+  color: #00b386;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.chart-line-box {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.bottom-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.control-pill {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #e2e4e9;
+  color: #7c7e8c;
+  transition: all 0.2s ease;
+}
+
+.control-pill.active {
+  background-color: #f4f5f7;
+  color: #2f3241;
+  border-color: #d1d3d9;
+}
+
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .side-card, .horizontal-line {
+    display: none;
+  }
+}
