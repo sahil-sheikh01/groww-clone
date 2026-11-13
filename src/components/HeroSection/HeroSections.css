@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.groww-hero-wrapper {
+  background: radial-gradient(
+    circle at 20% 25%,
+    #1c2d48 0%,
+    #111622 65%,
+    #0b0e15 100%
+  );
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 100px;
+}
+
+.groww-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 4%;
+  gap: 40px;
+}
+
+/* बायाँ हिस्सा: एक लाइन में हेडिंग और स्क्रॉल करने पर फिक्स */
+.left-content {
+  flex: 1;
+  min-width: 0;
+  position: sticky;
+  top: 150px;
+}
+
+.left-content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.left-content p {
+  font-size: 16px;
+  color: #b4bcc8;
+  line-height: 1.5;
+}
+
+/* दायाँ हिस्सा: तीनों कार्ड्स ऊपर-नीचे */
+.right-content {
+  flex: 1;
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.card-block {
+  width: 100%;
+}
+
+/* कार्ड बैकग्राउंड स्टाइल्स */
+.blue-card,
+.lime-card,
+.teal-card {
+  border-radius: 18px;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 28px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blue-card {
+  background: linear-gradient(180deg, #1b78d6 0%, #11539c 100%);
+}
+
+.lime-card {
+  background: linear-gradient(180deg, #c6d658 0%, #9db032 100%);
+}
+
+.teal-card {
+  background: linear-gradient(180deg, #27d3c3 0%, #149e91 100%);
+}
+
+.blue-card:hover,
+.lime-card:hover,
+.teal-card:hover {
+  transform: translateY(-4px);
+}
+
+/* फ़ोन का फ्रेम */
+.phone-frame {
+  width: 245px;
+  height: 278px;
+  background-color: #121620;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border: 4px solid #2b3346;
+  border-bottom: none;
+  padding: 15px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 1. Intraday फ़ोन लेआउट */
+.phone-body {
+  display: flex;
+  flex: 1;
+  margin-top: 10px;
+}
+
+.phone-sidebar {
+  width: 46%;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding-right: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.sidebar-item {
+  font-size: 10px;
+  color: #8b94a5;
+  padding-left: 6px;
+  cursor: pointer;
+}
+
+.sidebar-item.active {
+  color: #ffffff;
+  font-weight: 600;
+  border-left: 2px solid #00d09c;
+}
+
+.phone-options {
+  width: 54%;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  color: #d0d7e2;
+  cursor: pointer;
+}
+
+.radio {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.5px solid #5c667a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.radio.checked {
+  border-color: #00d09c;
+}
+
+.radio.checked::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #00d09c;
+}
+
+/* 2. MTF फ़ोन लेआउट */
+.mtf-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  margin-top: 10px;
+}
+
+.mtf-badge-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #27d3c3, #11539c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.mtf-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.mtf-tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #9aa3b2;
+  padding-top: 4px;
+}
+
+.mtf-toggle-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #1f2636;
+  border: 1px solid #00d09c;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toggle-circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #00d09c;
+}
+
+.mtf-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  color: #b4bcc8;
+}
+
+.mtf-input-box {
+  background-color: #1b2130;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  width: 75px;
+  text-align: right;
+}
+
+/* 3. Pledge फ़ोन लेआउट */
+.pledge-top {
+  justify-content: center;
+}
+
+.pledge-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pledge-amount-box {
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pledge-label {
+  font-size: 9px;
+  color: #8b94a5;
+}
+
+.pledge-amount {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 2px;
+}
+
+.pledge-stock-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191f2d;
+  padding: 7px 9px;
+  border-radius: 6px;
+}
+
+.stock-name {
+  font-size: 9.5px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.stock-qty {
+  font-size: 8.5px;
+  color: #8b94a5;
+  margin-top: 2px;
+}
+
+.stock-val {
+  font-size: 9.5px;
+  font-weight: 600;
+  color: #d0d7e2;
+}
+
+.pledge-btn {
+  margin-top: 4px;
+  background-color: #27d3c3;
+  color: #0b0e15;
+  text-align: center;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 10.5px;
+  font-weight: 700;
+}
+
+/* कार्ड के नीचे का टेक्स्ट */
+.caption-area {
+  margin-top: 18px;
+}
+
+.caption-area h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.caption-area a {
+  color: #00d09c;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.caption-area a .arrow {
+  transition: transform 0.25s ease;
+}
+
+.caption-area a:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* एंट्री एनीमेशन */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-entry-left {
+  animation: fadeSlideUp 0.7s ease-out forwards;
+}
+
+.animate-entry-right {
+  animation: fadeSlideUp 0.7s ease-out 0.15s both;
+}
+
+@media (max-width: 950px) {
+  .groww-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-content {
+    position: static;
+    text-align: center;
+  }
+  .left-content h1 {
+    white-space: normal;
+  }
+}

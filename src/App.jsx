@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Investment from "./components/Investment/Investment";
 import SipSection from "./components/SipSection/SipSections";
+import HeroSection from "./components/HeroSection/HeroSections";
 
 const App = () => {
   
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Investment />
       <SipSection/>
+      <HeroSection/>
     </div>
   );
 };
