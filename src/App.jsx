@@ -5,6 +5,7 @@ import SipSection from "./components/SipSection/SipSections";
 import HeroSection from "./components/HeroSection/HeroSections";
 import GrowwBanner from "./components/GrowwBanner/GrowwBanner";
 import Reviews from "./components/Reviews/Reviews";
+import FamilySection from "./components/familySection/FamilySection";
 
 const App = () => {
   return (
@@ -16,9 +17,9 @@ const App = () => {
       <HeroSection />
       <Reviews />
       <GrowwBanner />
+      <FamilySection/>
     </div>
   );
 };
 
 export default App;
-
