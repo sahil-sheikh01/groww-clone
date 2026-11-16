@@ -42,7 +42,7 @@ export default function FamilySection() {
                 if (e.key === "Enter") setActiveItem(item);
               }}
             >
-              {/* कार्ड 1: 915 (बिना किसी बॉक्स एरर के) */}
+              
               {item.type === "915" && (
                 <svg viewBox="0 0 220 100" className="family-svg-logo">
                   <defs>
@@ -67,7 +67,7 @@ export default function FamilySection() {
                 </svg>
               )}
 
-              {/* कार्ड 2: W (बिना किसी बॉक्स एरर के) */}
+              
               {item.type === "W" && (
                 <svg viewBox="0 0 160 110" className="family-svg-logo">
                   <defs>
