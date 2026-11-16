@@ -7,6 +7,7 @@ import GrowwBanner from "./components/GrowwBanner/GrowwBanner";
 import Reviews from "./components/Reviews/Reviews";
 import FamilySection from "./components/familySection/FamilySection";
 import Language from "./components/Language/Language";
+import FooterSection from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <GrowwBanner />
       <FamilySection/>
       <Language/>
+      <FooterSection/>
     </div>
   );
 };
