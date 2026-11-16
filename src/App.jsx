@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection/HeroSections";
 import GrowwBanner from "./components/GrowwBanner/GrowwBanner";
 import Reviews from "./components/Reviews/Reviews";
 import FamilySection from "./components/familySection/FamilySection";
+import Language from "./components/Language/Language";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Reviews />
       <GrowwBanner />
       <FamilySection/>
+      <Language/>
     </div>
   );
 };
