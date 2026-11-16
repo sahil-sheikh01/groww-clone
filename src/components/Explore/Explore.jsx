@@ -12,12 +12,16 @@ const Explore = () => {
       Track charts, positions, and
       trade in a customisable layout
     </h1>
+<br>
+</br>
 
 
 <button className="explore-btn">
   Explore Terminal <span>,</span>
 
 </button>
+<br>
+</br>
   </div>
 
 <div className="right-image">
