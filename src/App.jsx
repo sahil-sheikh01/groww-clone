@@ -4,6 +4,8 @@ import Investment from "./components/Investment/Investment";
 import SipSection from "./components/SipSection/SipSections";
 import HeroSection from "./components/HeroSection/HeroSections";
 import GrowwBanner from "./components/GrowwBanner/GrowwBanner";
+import FamilySection from "./components/familySection/FamilySection";
+
 
 const App = () => {
   
@@ -15,6 +17,8 @@ const App = () => {
       <SipSection/>
       <HeroSection/>
       <GrowwBanner/>
+      <FamilySection/>
+      
     </div>
   );
 };

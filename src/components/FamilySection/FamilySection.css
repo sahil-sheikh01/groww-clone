@@ -1,0 +1,194 @@
+.groww-family-section {
+  background-color: #111215;
+  padding: 72px 24px 92px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+  color: #ffffff;
+  user-select: none;
+}
+
+.groww-family-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.groww-family-heading {
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 48px;
+}
+
+.groww-family-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.family-card {
+  position: relative;
+  height: 360px;
+  background: radial-gradient(circle at 50% 45%, #24262e 0%, #16171b 78%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* पहली फोटो जैसा हल्का ग्रिड पैटर्न */
+.family-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 34px 34px;
+  pointer-events: none;
+}
+
+.family-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* SVG लोगो साइज़ */
+.family-svg-logo {
+  width: 210px;
+  height: 110px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Groww Credit लोगो */
+.logo-credit {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.credit-circle-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+}
+
+.credit-wave {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%);
+  clip-path: polygon(0 58%, 35% 42%, 65% 60%, 100% 35%, 100% 100%, 0 100%);
+}
+
+.credit-text {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+/* पॉपअप मॉडल */
+.family-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.family-modal-card {
+  background-color: #1c1e24;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  max-width: 380px;
+  width: 100%;
+  padding: 24px;
+  text-align: left;
+}
+
+.family-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.family-badge {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #00d09c;
+}
+
+.family-close-btn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.family-modal-title {
+  margin: 12px 0 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.family-modal-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b0b4c0;
+}
+
+.family-explore-btn {
+  margin-top: 22px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #00b386;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.family-explore-btn:hover {
+  background-color: #009e76;
+}
+
+@media (max-width: 900px) {
+  .groww-family-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .family-card {
+    height: 280px;
+  }
+
+  .groww-family-heading {
+    font-size: 28px;
+  }
+}
