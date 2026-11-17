@@ -6,6 +6,8 @@ import HeroSection from "./components/HeroSection/HeroSections";
 import GrowwBanner from "./components/GrowwBanner/GrowwBanner";
 import Reviews from "./components/Reviews/Reviews";
 import FamilySection from "./components/familySection/FamilySection";
+import Language from "./components/Language/Language";
+import FooterSection from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
       <Reviews />
       <GrowwBanner />
       <FamilySection/>
+      <Language/>
+      <FooterSection/>
     </div>
   );
 };
