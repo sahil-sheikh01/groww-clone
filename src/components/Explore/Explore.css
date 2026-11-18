@@ -1,20 +1,191 @@
+.fo-scroll-wrapper {
+  position: relative;
+  height: 450vh; /* 4 स्लाइड्स के आरामदायक स्क्रॉल के लिए 450vh */
+  width: 100%;
+  background-color: #0b0e11;
+  color: #ffffff;
+}
 
-*{
-  margin: 0;
-  padding: 0;
+/* मुख्य हेडिंग: पेज के साथ स्क्रॉल होगी */
+.fo-heading-wrapper {
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 50px 40px 10px;
   box-sizing: border-box;
 }
 
-.page {
+.fo-main-heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
   width: 100%;
-  min-height: 100vh;
-  background-color: black;
-
+  margin: 0;
+  color: #ffffff !important;
 }
 
-.page img {
-  width: 100%;
+/* स्टिकी कंटेनर */
+.fo-sticky-container {
+  position: sticky;
+  top: 0;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.fo-content-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 720px;
+  width: 100%;
+}
+
+/* लेफ्ट साइड: 4 स्लाइड्स के लिए ऊंचाई 400% की गई है */
+.fo-text-scroll-window {
+  flex: 0.78;
+  min-width: 340px; /* शब्दों के लिए पर्याप्त जगह ताकि कोई अक्षर न कटे */
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10; /* शब्द हमेशा इमेज के ऊपर और साफ दिखेंगे */
+  padding-left: 10px;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+}
+
+.fo-text-mover {
+  height: 400%; /* 4 स्लाइड्स के लिए 400% */
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+.fo-text-slide {
+  height: 25%; /* 4 स्लाइड्स में से हर एक का हिस्सा (100% / 4) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition: opacity 0.4s ease;
+  padding-right: 12px;
+}
+
+.fo-text-slide.inactive-text {
+  opacity: 0.35;
+}
+
+.fo-text-slide.active-text {
+  opacity: 1;
+}
+
+.fo-text-slide p {
+  font-size: 1.85rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 24px;
+  color: #ffffff !important;
+}
+
+.fo-explore-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #2962ff;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fo-explore-btn:hover {
+  background-color: #1e4bd8;
+}
+
+/* राइट साइड: चारों इमेज को बड़ा (Big) दिखाने के लिए */
+.fo-image-container {
+  flex: 2.1;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fo-image-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fo-image-box.show {
+  opacity: 1;
+  transform: scale(1.1) translateY(0); /* चारों इमेज बड़ी दिखेंगी */
+  transform-origin: right center;
+  z-index: 2;
+}
+
+.fo-image-box.hide {
+  opacity: 0;
+  transform: scale(0.98) translateY(20px);
+  transform-origin: right center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fo-main-img {
+  width: 100%;
+  height: 100%;
+  max-height: 680px;
   object-fit: contain;
-  display: block;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+/* बैकग्राउंड ग्लो इफेक्ट (चौथी इमेज के लिए गोल्ड ग्लो भी जोड़ा गया है) */
+.fo-green-glow,
+.fo-blue-glow,
+.fo-gold-glow {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 1;
+  right: 15%;
+}
+
+.fo-green-glow {
+  background: rgba(0, 200, 83, 0.3);
+}
+
+.fo-blue-glow {
+  background: rgba(41, 98, 255, 0.3);
+}
+
+.fo-gold-glow {
+  background: rgba(255, 193, 7, 0.25);
 }

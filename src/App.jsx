@@ -8,6 +8,7 @@ import Reviews from "./components/Reviews/Reviews";
 import FamilySection from "./components/familySection/FamilySection";
 import Language from "./components/Language/Language";
 import FooterSection from "./components/Footer/Footer";
+import Explore from "./components/Explore/Explore";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Hero />
       <Investment />
       <SipSection />
+      <Explore/>
       <HeroSection />
       <Reviews />
       <GrowwBanner />
