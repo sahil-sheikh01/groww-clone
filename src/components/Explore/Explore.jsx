@@ -1,13 +1,9 @@
-
 import './explore.css'
 import myImage from '../../assets/img-frame-1.webp'
 import myImage2 from '../../assets/img-frame-2.webp'
 import myImage3 from '../../assets/img-frame-3.webp'
 import myImage4 from'../../assets/img-frame-4.webp'
 import { useEffect, useRef, useState } from 'react'
-
-
-
 
 const slidesData = [
   {
@@ -53,12 +49,10 @@ const Explore = () => {
       const totalScroll = rect.height - window.innerHeight;
       const currentScroll = -rect.top;
 
-      // 0 से 1 के बीच स्क्रॉल प्रोग्रेस निकालें
       let progress = currentScroll / totalScroll;
       progress = Math.max(0, Math.min(1, progress));
       setScrollProgress(progress);
 
-      // 4 स्लाइड्स (25% प्रत्येक) के हिसाब से एक्टिव इमेज बदलें
       if (progress < 0.25) {
         setActiveSlide(0);
       } else if (progress < 0.50) {
@@ -76,17 +70,13 @@ const Explore = () => {
 
   return (
     <section ref={sectionRef} className="fo-scroll-wrapper">
-      
-      {/* 1. मुख्य हेडिंग: पेज के साथ ऊपर स्क्रॉल होगी */}
       <div className="fo-heading-wrapper">
         <h1 className="fo-main-heading">Trade Futures & Options like a pro</h1>
       </div>
 
-      {/* 2. स्टिकी सेक्शन: बाएं शब्द सरकेंगे और दाएं चारों इमेज बदलेंगी */}
       <div className="fo-sticky-container">
         <div className="fo-content-layout">
           
-          {/* बाईं तरफ: 4 स्लाइड्स के लिए 0% से 75% तक ऊपर खिसकेगा */}
           <div className="fo-text-scroll-window">
             <div
               className="fo-text-mover"
@@ -110,7 +100,6 @@ const Explore = () => {
             </div>
           </div>
 
-          {/* दाईं तरफ: चारों बड़ी इमेज स्क्रॉल के हिसाब से स्मूदली बदलेंगी */}
           <div className="fo-image-container">
             {slidesData.map((slide, index) => (
               <div
