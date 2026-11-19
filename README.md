@@ -44,8 +44,9 @@ Open the local URL displayed in your terminal to view the application.
 Developed collaboratively as a group project.
 
 - [Sahil Sheikh](https://github.com/sahil-sheikh01)
-- [Shalini](https://github.com/shalini-dev19)
 - [Nishant Gupta](https://github.com/nishant-gupta89)
+- [Shalini](https://github.com/shalini-dev19)
+- [Tanu Singh](https://github.com/tanu-dev20)
 
 ## ⚠️ Disclaimer
 
