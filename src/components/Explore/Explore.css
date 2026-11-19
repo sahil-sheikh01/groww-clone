@@ -1,12 +1,11 @@
 .fo-scroll-wrapper {
   position: relative;
-  height: 450vh; /* 4 स्लाइड्स के आरामदायक स्क्रॉल के लिए 450vh */
+  height: 450vh;
   width: 100%;
   background-color: #0b0e11;
   color: #ffffff;
 }
 
-/* मुख्य हेडिंग: पेज के साथ स्क्रॉल होगी */
 .fo-heading-wrapper {
   max-width: 1560px;
   margin: 0 auto;
@@ -23,7 +22,6 @@
   color: #ffffff !important;
 }
 
-/* स्टिकी कंटेनर */
 .fo-sticky-container {
   position: sticky;
   top: 0;
@@ -47,14 +45,13 @@
   width: 100%;
 }
 
-/* लेफ्ट साइड: 4 स्लाइड्स के लिए ऊंचाई 400% की गई है */
 .fo-text-scroll-window {
   flex: 0.78;
-  min-width: 340px; /* शब्दों के लिए पर्याप्त जगह ताकि कोई अक्षर न कटे */
+  min-width: 340px;
   height: 340px;
   overflow: hidden;
   position: relative;
-  z-index: 10; /* शब्द हमेशा इमेज के ऊपर और साफ दिखेंगे */
+  z-index: 10;
   padding-left: 10px;
   mask-image: linear-gradient(
     to bottom,
@@ -73,13 +70,13 @@
 }
 
 .fo-text-mover {
-  height: 400%; /* 4 स्लाइड्स के लिए 400% */
+  height: 400%;
   transition: transform 0.1s ease-out;
   will-change: transform;
 }
 
 .fo-text-slide {
-  height: 25%; /* 4 स्लाइड्स में से हर एक का हिस्सा (100% / 4) */
+  height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,7 +117,6 @@
   background-color: #1e4bd8;
 }
 
-/* राइट साइड: चारों इमेज को बड़ा (Big) दिखाने के लिए */
 .fo-image-container {
   flex: 2.1;
   position: relative;
@@ -142,7 +138,7 @@
 
 .fo-image-box.show {
   opacity: 1;
-  transform: scale(1.1) translateY(0); /* चारों इमेज बड़ी दिखेंगी */
+  transform: scale(1.1) translateY(0);
   transform-origin: right center;
   z-index: 2;
 }
@@ -165,7 +161,6 @@
   z-index: 2;
 }
 
-/* बैकग्राउंड ग्लो इफेक्ट (चौथी इमेज के लिए गोल्ड ग्लो भी जोड़ा गया है) */
 .fo-green-glow,
 .fo-blue-glow,
 .fo-gold-glow {

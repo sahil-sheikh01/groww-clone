@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import './HeroSections.css';
+import { useState } from "react";
+import './StockTrading.css';
 
 const sidebarItems = [
   "Sort by",
@@ -26,16 +26,12 @@ export default function HeroSection() {
   return (
     <section className="groww-hero-wrapper">
       <div className="groww-container">
-        {/* बायाँ हिस्सा: मुख्य हेडिंग (Sticky) */}
         <div className="left-content animate-entry-left">
           <h1>Stock trading made simple</h1>
           <p>Fast, simple and secure stock trading. All in one app.</p>
         </div>
 
-        {/* दायाँ हिस्सा: तीनों कार्ड्स एक के नीचे एक */}
         <div className="right-content animate-entry-right">
-          
-          {/* 1. पहला कार्ड: नीला (Intraday) */}
           <div className="card-block">
             <div className="blue-card">
               <div className="phone-frame">
@@ -87,7 +83,6 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* 2. दूसरा कार्ड: पीला-हरा (MTF) */}
           <div className="card-block">
             <div className="lime-card">
               <div className="phone-frame">
@@ -98,7 +93,6 @@ export default function HeroSection() {
                 <div className="mtf-body">
                   <div className="mtf-badge-circle">4x</div>
                   <div className="mtf-subtitle">Buy in 4x less price</div>
-
                   <div className="mtf-tabs">
                     <span className="mtf-tab">Delivery</span>
                     <div
@@ -131,7 +125,6 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* 3. तीसरा कार्ड (नया): फ़िरोज़ी/हरा (Pledge) */}
           <div className="card-block">
             <div className="teal-card">
               <div className="phone-frame">
@@ -150,7 +143,7 @@ export default function HeroSection() {
                       <div className="stock-name">HDFCBANK</div>
                       <div className="stock-qty">150 shares</div>
                     </div>
-                    <span className="stock-val">₹2,45,000 ›</span>
+                    <span className="stock-val">₹2,45,000</span>
                   </div>
 
                   <div className="pledge-stock-item">
@@ -158,7 +151,7 @@ export default function HeroSection() {
                       <div className="stock-name">RELIANCE</div>
                       <div className="stock-qty">200 shares</div>
                     </div>
-                    <span className="stock-val">₹5,80,000 ›</span>
+                    <span className="stock-val">₹5,80,000</span>
                   </div>
 
                   <div className="pledge-btn">Pledge for margin</div>
@@ -173,7 +166,6 @@ export default function HeroSection() {
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </section>

@@ -1,4 +1,3 @@
-import React from "react";
 import './Footer.css';
 
 const TICKER_STOCKS = [
@@ -47,12 +46,11 @@ const PRODUCTS_RIGHT = [
 
 const QUICK_LINKS = ["AMC Mutual Funds", "Calculators", "Glossary"];
 
-export default function FooterSection() {
+export default function Footer() {
   const tickerList = [...TICKER_STOCKS, ...TICKER_STOCKS];
 
   return (
     <footer className="groww-footer-wrapper">
-   
       <div className="footer-ticker-strip">
         <div className="footer-ticker-track">
           {tickerList.map((stock, idx) => (
@@ -65,11 +63,9 @@ export default function FooterSection() {
         </div>
       </div>
 
- 
       <div className="groww-footer-main">
         <div className="footer-container">
           <div className="footer-grid">
-         
             <div className="footer-brand-col">
               <div className="footer-logo-row">
                 <div className="footer-logo-circle">
@@ -90,7 +86,6 @@ export default function FooterSection() {
                 Contact Us
               </a>
 
-         
               <div className="footer-social-row">
                 <a href="#x" aria-label="X" className="social-pill">
                   <svg viewBox="0 0 24 24" className="social-svg">
@@ -119,7 +114,6 @@ export default function FooterSection() {
                 </a>
               </div>
 
-       
               <div className="footer-download-box">
                 <p className="footer-download-heading">Download the App</p>
                 <div className="footer-store-icons">
@@ -137,7 +131,6 @@ export default function FooterSection() {
               </div>
             </div>
 
-            {/* दूसरा कॉलम: GROWW */}
             <div className="footer-links-col">
               <h4 className="footer-col-title">GROWW</h4>
               <ul className="footer-list">
@@ -149,7 +142,6 @@ export default function FooterSection() {
               </ul>
             </div>
 
-       
             <div className="footer-products-col">
               <h4 className="footer-col-title">PRODUCTS</h4>
               <div className="footer-products-split">
@@ -170,7 +162,6 @@ export default function FooterSection() {
               </div>
             </div>
 
-   
             <div className="footer-links-col">
               <h4 className="footer-col-title">QUICK LINKS</h4>
               <ul className="footer-list">

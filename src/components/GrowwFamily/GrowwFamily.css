@@ -40,7 +40,6 @@
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* पहली फोटो जैसा हल्का ग्रिड पैटर्न */
 .family-card::before {
   content: "";
   position: absolute;
@@ -58,7 +57,6 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
 }
 
-/* SVG लोगो साइज़ */
 .family-svg-logo {
   width: 210px;
   height: 110px;
@@ -66,7 +64,6 @@
   z-index: 1;
 }
 
-/* Groww Credit लोगो */
 .logo-credit {
   position: relative;
   z-index: 1;
@@ -100,7 +97,6 @@
   color: #ffffff;
 }
 
-/* पॉपअप मॉडल */
 .family-modal-overlay {
   position: fixed;
   inset: 0;

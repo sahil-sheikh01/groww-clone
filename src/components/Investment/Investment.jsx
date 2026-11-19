@@ -4,19 +4,16 @@ import logo from '../../assets/stocks.png';
 function Investment() {
   return (
     <div className="investment-page-wrapper">
-  
       <div className="platform-heading">
         <h2>India's #1</h2>
         <h2>Investing platform</h2>
         <p>Trusted by 2 Cr+ active investors</p>
-
         <div className="investment-section">
           <h1>India's stock market at your fingertips</h1>
         </div>
       </div>
 
       <div className="market-cards">
-        
         <div className="left-cards">
           <div className="outer-card">
             <h2 className="stocks-outer-title">Stocks</h2>
@@ -64,25 +61,17 @@ function Investment() {
             </div>
           </div>
 
-
-
           <div className="bonds-card">
             <div className="bonds-content">
               <div className="bonds-text">
                 <h2>Bonds</h2>
                 <p className="bonds-subtitle">Earn fixed interest with regular payouts</p>
-              </div>
-              
+              </div> 
             </div>
           </div>
-
         </div>
 
-
-
         <div className="right-cards">
-          
-       
           <div className="etf-card">
             <h2>ETFs</h2>
             <p className="etf-subtitle">Gold , Silver , International & Index ETFs</p>
@@ -110,11 +99,8 @@ function Investment() {
             </div>
           </div>
 
-      
-
           <div className="ipo-card">
             <h2>IPOs</h2>
-
             <div className="ipo-mobile-frame">
               <div className="ipo-tabs">
                 <span className="ipo-tab active">Open (4)</span>
@@ -175,9 +161,7 @@ function Investment() {
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   );

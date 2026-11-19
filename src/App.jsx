@@ -1,14 +1,14 @@
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Investment from "./components/Investment/Investment";
-import SipSection from "./components/SipSection/SipSections";
-import HeroSection from "./components/HeroSection/HeroSections";
-import GrowwBanner from "./components/GrowwBanner/GrowwBanner";
-import Reviews from "./components/Reviews/Reviews";
-import FamilySection from "./components/familySection/FamilySection";
-import Language from "./components/Language/Language";
-import FooterSection from "./components/Footer/Footer";
+import MutualFunds from "./components/MutualFunds/MutualFunds";
 import Explore from "./components/Explore/Explore";
+import StockTrading from "./components/StockTrading/StockTrading";
+import Reviews from "./components/Reviews/Reviews";
+import GrowwBanner from "./components/GrowwBanner/GrowwBanner";
+import GrowwFamily from "./components/GrowwFamily/GrowwFamily";
+import Language from "./components/Language/Language";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -16,14 +16,14 @@ const App = () => {
       <Navbar />
       <Hero />
       <Investment />
-      <SipSection />
+      <MutualFunds />
       <Explore/>
-      <HeroSection />
+      <StockTrading />
       <Reviews />
       <GrowwBanner />
-      <FamilySection/>
+      <GrowwFamily/>
       <Language/>
-      <FooterSection/>
+      <Footer/>
     </div>
   );
 };

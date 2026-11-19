@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./FamilySection.css";
+import { useState } from "react";
+import "./GrowwFamily.css";
 
 const FAMILY_ITEMS = [
   {
@@ -42,7 +42,6 @@ export default function FamilySection() {
                 if (e.key === "Enter") setActiveItem(item);
               }}
             >
-              
               {item.type === "915" && (
                 <svg viewBox="0 0 220 100" className="family-svg-logo">
                   <defs>
@@ -67,7 +66,6 @@ export default function FamilySection() {
                 </svg>
               )}
 
-              
               {item.type === "W" && (
                 <svg viewBox="0 0 160 110" className="family-svg-logo">
                   <defs>
@@ -91,7 +89,6 @@ export default function FamilySection() {
                 </svg>
               )}
 
-              {/* कार्ड 3: Groww Credit */}
               {item.type === "Credit" && (
                 <div className="logo-credit">
                   <div className="credit-circle-icon">
