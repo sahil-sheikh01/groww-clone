@@ -1,4 +1,4 @@
-import './explore.css'
+import './Explore.css'
 import myImage from '../../assets/img-frame-1.webp'
 import myImage2 from '../../assets/img-frame-2.webp'
 import myImage3 from '../../assets/img-frame-3.webp'
